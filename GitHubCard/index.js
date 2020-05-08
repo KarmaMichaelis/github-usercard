@@ -4,18 +4,9 @@
     https://api.github.com/users/<your name>
 */
 
+const axios= ('axios')
 
-  axios.get('https://api.github.com/users/KarmaMichaelis')
-.then(response=>{
-  console.log(response)
-})
-.catch(error=>{
-  console.log('error')
-})
-.finally(()=>{
-  console.log('complete')
-})
-
+ 
 
 
 /*
@@ -72,3 +63,19 @@ const followersArray = [];
     luishrd
     bigknell
 */
+
+function gitCardMaker(attrs/*possibly change*/){
+  const {imgUrl, userUrl/*possible change*/}=attrs
+  
+  const gitCard= document.createElement('div')
+  const gitImg= document.createElement('img')
+  const gitInfo= document.createElement('div')
+  const gitName= document.createElement('h3')
+  const gitUserName= docment.createElement('p')
+  const gitLocation= document.createElement('p')
+  const gitProfile=document.createElement('p')
+  const gitFollowers=document.createElement('p')
+  const gitFollowing=document.createElement('p')
+  const gitBio=document.createElement('p')
+  
+}
