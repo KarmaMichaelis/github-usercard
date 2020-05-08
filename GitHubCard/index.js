@@ -69,7 +69,7 @@ function gitCardMaker(attrs/*possibly change*/){
   
   const gitCard= document.createElement('div')
   const gitImg= document.createElement('img')
-  const gitInfo= document.createElement('div')
+  const gitInform= document.createElement('div')
   const gitName= document.createElement('h3')
   const gitUserName= docment.createElement('p')
   const gitLocation= document.createElement('p')
@@ -77,5 +77,17 @@ function gitCardMaker(attrs/*possibly change*/){
   const gitFollowers=document.createElement('p')
   const gitFollowing=document.createElement('p')
   const gitBio=document.createElement('p')
-  
+
+  gitCard.appendChild(img);
+  gitCard.appendChild(div);
+  gitInform.appendChild(h3);
+  gitInform.appendChild(p);
+  gitInform.appendChild(p);
+  gitInform.appendChild(p);
+  gitInform.appendChild(p);
+  gitInform.appendChild(p);
+
+  gitCard.classList.add('card')
+
+
 }
