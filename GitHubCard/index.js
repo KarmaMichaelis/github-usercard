@@ -63,6 +63,7 @@ const followersArray = [];
     luishrd
     bigknell
 */
+//const gitCardMaker= document.querySelector(".gitCard")
 
 function gitCardMaker(attrs/*possibly change*/){
   const {imgUrl, userUrl/*possible change*/}=attrs
@@ -86,8 +87,23 @@ function gitCardMaker(attrs/*possibly change*/){
   gitInform.appendChild(p);
   gitInform.appendChild(p);
   gitInform.appendChild(p);
+  console.log(gitInform)
 
   gitCard.classList.add('card')
-
-
+  gitInform.classList.add('card-info')
+  gitName.classList.add('name')
+  gitUserName.classList.add('username')
+  
+  gitName.textContent=`${name}`
+  gitUserName.textContent=`${username}`
+  gitLocation.textContent=`User location: ${location}`
+  gitProfile.textContent='Address to github'
+  gitFollowers.textContent=`Followers: ${followers}`
+  gitFollowing.textContent=`Following: ${following}`
+  gitBio.textContent=`${bio}`
+  
+  
+ 
+  return gitCardMaker
 }
+
