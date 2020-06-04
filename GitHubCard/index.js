@@ -3,6 +3,10 @@
     (replacing the placeholder with your Github name):
     https://api.github.com/users/<your name>
 */
+function getCards(){
+  axios.get('https://api.github.com/users/KarmaMichaelis')
+}
+
 
 /*
   STEP 2: Inspect and study the data coming back, this is YOUR
@@ -49,6 +53,19 @@ const followersArray = [];
       </div>
     </div>
 */
+
+function makeCard(cardData){
+  const mainCard=document.createElement('div')
+  const cardHeading=document.createElement('h3')
+  const userCard=document.createElement('p')
+  const cardLocation=document.createElement('p')
+  const cardProfile=document.createElement('p')
+  const cardFollowers=document.createElement('p')
+  const cardFollowing=document.createElement('p')
+  const cardBio=document.createElement('p')
+
+
+}//closes makeCard
 
 /*
   List of LS Instructors Github username's:
