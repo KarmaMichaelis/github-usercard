@@ -4,6 +4,11 @@
     https://api.github.com/users/<your name>
 */
 
+const axios= ('axios')
+
+ 
+
+
 /*
   STEP 2: Inspect and study the data coming back, this is YOUR
     github info! You will need to understand the structure of this
@@ -58,3 +63,47 @@ const followersArray = [];
     luishrd
     bigknell
 */
+//const gitCardMaker= document.querySelector(".gitCard")
+
+function gitCardMaker(attrs/*possibly change*/){
+  const {imgUrl, userUrl/*possible change*/}=attrs
+  
+  const gitCard= document.createElement('div')
+  const gitImg= document.createElement('img')
+  const gitInform= document.createElement('div')
+  const gitName= document.createElement('h3')
+  const gitUserName= docment.createElement('p')
+  const gitLocation= document.createElement('p')
+  const gitProfile=document.createElement('p')
+  const gitFollowers=document.createElement('p')
+  const gitFollowing=document.createElement('p')
+  const gitBio=document.createElement('p')
+
+  gitCard.appendChild(img);
+  gitCard.appendChild(div);
+  gitInform.appendChild(h3);
+  gitInform.appendChild(p);
+  gitInform.appendChild(p);
+  gitInform.appendChild(p);
+  gitInform.appendChild(p);
+  gitInform.appendChild(p);
+  console.log(gitInform)
+
+  gitCard.classList.add('card')
+  gitInform.classList.add('card-info')
+  gitName.classList.add('name')
+  gitUserName.classList.add('username')
+  
+  gitName.textContent=`${name}`
+  gitUserName.textContent=`${username}`
+  gitLocation.textContent=`User location: ${location}`
+  gitProfile.textContent='Address to github'
+  gitFollowers.textContent=`Followers: ${followers}`
+  gitFollowing.textContent=`Following: ${following}`
+  gitBio.textContent=`${bio}`
+  
+  
+ 
+  return gitCardMaker
+}
+
