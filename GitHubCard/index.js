@@ -56,6 +56,7 @@ const followersArray = [];
 
 function makeCard(cardData){
   const mainCard=document.createElement('div')
+  const cardInfo=document.createElement('div')
   const cardHeading=document.createElement('h3')
   const userCard=document.createElement('p')
   const cardLocation=document.createElement('p')
@@ -63,7 +64,20 @@ function makeCard(cardData){
   const cardFollowers=document.createElement('p')
   const cardFollowing=document.createElement('p')
   const cardBio=document.createElement('p')
+  const cardLink=document.createElement('a')
+  const cardImage=document.createElement('img')
 
+  //appending child
+  mainCard.appendChild('.cards')
+  cardImage.appendChild(mainCard)
+  cardInfo.appendChild(mainCard)
+  cardHeading.appendChild(cardInfo)
+  userCard.appendChild(cardInfo)
+  cardLocation.appendChild(cardInfo)
+  cardProfile.appendChild(cardInfo)
+  cardLink.appendChild(cardProfile)
+  cardFollowers.appendChild(cardInfo)
+  cardFollowing.appendChild(cardInfo)
 
 }//closes makeCard
 
